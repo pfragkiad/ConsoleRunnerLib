@@ -16,3 +16,6 @@ Via the .NET CLI
 dotnet add package CustomRunnerLib
 ```
 
+## ConsoleRunner
+
+`ConsoleRunner` gives alternative ways of retrieving the output of a console application using 

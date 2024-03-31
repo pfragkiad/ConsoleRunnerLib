@@ -10,20 +10,17 @@ namespace ConsoleRunnerApp
         static void Main(string[] args)
         {
             //create host
-            IHost  host = Host.CreateDefaultBuilder(args)
+            IHost host = Host.CreateDefaultBuilder(args)
                 .ConfigureServices((context, services) =>
                 {
-                    services
-                    .AddScoped<ConsoleLogger>()
-                    .AddTransient<ConsoleRunner>()
-                    ;
+                    services.AddConsoleRunnerLib();
                 }).Build();
 
 
 
             IServiceProvider serviceProvider = host.Services;
 
-            serviceProvider
+            serviceProvider.GetConsoleRunner();
         }
 
 

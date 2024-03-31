@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleRunnerLib;
 
-public class ConsoleLogger
+public class ConsoleLogger : IConsoleLogger
 {
     private readonly ILogger _logger;
     private readonly IServiceProvider _provider;

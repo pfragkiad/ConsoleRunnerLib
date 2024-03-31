@@ -23,7 +23,7 @@ namespace ConsoleRunnerApp
 
             IServiceProvider serviceProvider = host.Services;
 
-            serviceProvider.
+            serviceProvider
         }
 
 

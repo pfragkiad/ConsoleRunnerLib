@@ -4,10 +4,30 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.2</Version>
+    <Authors>Pavlos Fragkiadoulakis</Authors>
+    <Company>Pavlos Fragkiadoulakis</Company>
+    <Description>Modern and practical ConsoleRunner using Dependency Injection principles.</Description>
+    <Copyright>(c) 2023-2024 Paulus Stuff</Copyright>
+    <PackageTags>console;runner;executor;stdout;stderror;DI;dependency injection</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

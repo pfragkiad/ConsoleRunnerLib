@@ -9,7 +9,7 @@ public readonly struct ProcessOutput
     public int ExitCode { get; init; }
 }
 
-public class ConsoleRunner
+public class ConsoleRunner : IConsoleRunner
 {
     public async Task<ProcessOutput> RunAndGetOutputAndError(
         string executablePath,

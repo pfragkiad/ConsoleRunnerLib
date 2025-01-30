@@ -6,10 +6,10 @@ namespace ConsoleRunnerLib;
 
 public class ConsoleLogger : IConsoleLogger
 {
-    private readonly ILogger _logger;
+    private readonly ILogger<ConsoleLogger> _logger;
     private readonly IServiceProvider _provider;
 
-    public ConsoleLogger(ILogger logger, IServiceProvider provider)
+    public ConsoleLogger(ILogger<ConsoleLogger> logger, IServiceProvider provider)
     {
         _logger = logger;
         _provider = provider;
